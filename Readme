@@ -1,0 +1,92 @@
+SNO
+Command
+Syntax
+Comments
+1
+SELECT
+SELECT column1, column2 FROM table_name;
+Retrieves data from one or more tables.
+2
+WHERE
+SELECT * FROM table_name WHERE condition;
+Filters records based on a condition.
+3
+AND
+SELECT * FROM table_name WHERE condition1 AND condition2;
+Combines two conditions; both must be true.
+4
+OR
+SELECT * FROM table_name WHERE condition1 OR condition2;
+Combines two conditions; either can be true.
+5
+ORDER BY
+SELECT * FROM table_name ORDER BY column1 ASC/DESC;
+Sorts the result set in ascending or descending order.
+6
+JOIN (INNER JOIN)
+SELECT columns FROM table1 INNER JOIN table2 ON table1.id = table2.id;
+Combines rows from two tables based on related columns.
+7
+LEFT JOIN
+SELECT columns FROM table1 LEFT JOIN table2 ON table1.id = table2.id;
+Returns all rows from the left table, and matched rows from the right table.
+8
+RIGHT JOIN
+SELECT columns FROM table1 RIGHT JOIN table2 ON table1.id = table2.id;
+Returns all rows from the right table, and matched rows from the left table.
+9
+GROUP BY
+SELECT column, COUNT(*) FROM table_name GROUP BY column;
+Groups rows that have the same values into summary rows.
+10
+HAVING
+SELECT column, COUNT(*) FROM table_name GROUP BY column HAVING COUNT(*) > 1;
+Filters groups based on a condition.
+11
+INSERT INTO
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+Adds new rows into a table.
+12
+UPDATE
+UPDATE table_name SET column1 = value1 WHERE condition;
+Modifies existing records.
+13
+DELETE
+DELETE FROM table_name WHERE condition;
+Removes records from a table.
+14
+CREATE TABLE
+CREATE TABLE table_name (column1 datatype, column2 datatype);
+Creates a new table in the database.
+15
+ALTER TABLE
+ALTER TABLE table_name ADD column_name datatype;
+Adds, deletes, or modifies columns in an existing table.
+16
+DROP TABLE
+DROP TABLE table_name;
+Deletes an entire table.
+17
+DISTINCT
+SELECT DISTINCT column1 FROM table_name;
+Removes duplicate values.
+18
+IN
+SELECT * FROM table_name WHERE column_name IN (value1, value2);
+Matches any value in a list.
+19
+BETWEEN
+SELECT * FROM table_name WHERE column_name BETWEEN value1 AND value2;
+Selects values within a range.
+20
+LIKE
+SELECT * FROM table_name WHERE column_name LIKE 'pattern';
+Searches for a pattern in a column.
+21
+UNION
+SELECT column1 FROM table1 UNION SELECT column1 FROM table2;
+Combines result sets and removes duplicates.
+22
+EXISTS
+SELECT * FROM table_name WHERE EXISTS (SELECT * FROM another_table WHERE condition);
+Checks for the existence of rows.
