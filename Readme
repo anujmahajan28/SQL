@@ -90,3 +90,7 @@ Combines result sets and removes duplicates.
 EXISTS
 SELECT * FROM table_name WHERE EXISTS (SELECT * FROM another_table WHERE condition);
 Checks for the existence of rows.
+23
+NOT IN
+SELECT * FROM table_name WHERE column_name NOT IN (value1, value2);
+Filters records that do not match any value in a list.
