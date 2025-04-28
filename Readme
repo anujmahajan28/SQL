@@ -94,3 +94,95 @@ Checks for the existence of rows.
 NOT IN
 SELECT * FROM table_name WHERE column_name NOT IN (value1, value2);
 Filters records that do not match any value in a list.
+24
+IS NULL
+SELECT * FROM table_name WHERE column_name IS NULL;
+Filters records with NULL values in a column.
+25
+IS NOT NULL
+SELECT * FROM table_name WHERE column_name IS NOT NULL;
+Filters records that do not have NULL values in a column.
+26
+CASE
+SELECT column_name, CASE WHEN condition THEN result ELSE result END AS alias FROM table_name;
+Provides conditional logic in queries.
+27
+LIMIT
+SELECT * FROM table_name LIMIT number;
+Limits the number of records returned.
+28
+OFFSET
+SELECT * FROM table_name LIMIT number OFFSET number;
+Skips a specified number of records and returns the next set.
+29
+TRUNCATE
+TRUNCATE TABLE table_name;
+Removes all records from a table but retains its structure.
+30
+RENAME
+ALTER TABLE old_table_name RENAME TO new_table_name;
+Renames a table.
+31
+ADD COLUMN
+ALTER TABLE table_name ADD column_name datatype;
+Adds a new column to an existing table.
+32
+DROP COLUMN
+ALTER TABLE table_name DROP COLUMN column_name;
+Deletes a column from a table.
+33
+MODIFY COLUMN
+ALTER TABLE table_name MODIFY COLUMN column_name new_datatype;
+Changes the datatype or constraints of a column.
+34
+CREATE INDEX
+CREATE INDEX index_name ON table_name (column_name);
+Creates an index on a table to improve query performance.
+35
+DROP INDEX
+DROP INDEX index_name;
+Deletes an index from a table.
+36
+ALTER INDEX
+ALTER INDEX index_name RENAME TO new_index_name;
+Renames an existing index.
+37
+SAVEPOINT
+SAVEPOINT savepoint_name;
+Creates a savepoint in a transaction for rollbacks.
+38
+ROLLBACK TO SAVEPOINT
+ROLLBACK TO SAVEPOINT savepoint_name;
+Rolls back the transaction to a specific savepoint.
+39
+COMMIT
+COMMIT;
+Saves all changes made during a transaction.
+40
+EXPLAIN
+EXPLAIN SELECT * FROM table_name;
+Provides query execution details, useful for performance tuning.
+41
+SHOW
+SHOW TABLES;
+Lists all tables in the current database.
+42
+DESCRIBE
+DESCRIBE table_name;
+Provides structure information about a table.
+43
+UNION ALL
+SELECT column1 FROM table1 UNION ALL SELECT column1 FROM table2;
+Combines result sets and includes duplicates.
+44
+CROSS JOIN
+SELECT * FROM table1 CROSS JOIN table2;
+Returns the Cartesian product of two tables.
+45
+FULL OUTER JOIN
+SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.id = table2.id;
+Combines rows from both tables, including unmatched rows.
+46
+LEFT OUTER JOIN
+SELECT * FROM table1 LEFT OUTER JOIN table2 ON table1.id = table2.id;
+Combines rows from left table and matched rows from the right table.
