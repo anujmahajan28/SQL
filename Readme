@@ -186,3 +186,5 @@ Combines rows from both tables, including unmatched rows.
 LEFT OUTER JOIN
 SELECT * FROM table1 LEFT OUTER JOIN table2 ON table1.id = table2.id;
 Combines rows from left table and matched rows from the right table.
+
+I’ve been practicing various SQL queries and regularly updating my sheet with new commands and syntax. This sheet reflects my ongoing learning and will serve as a reference for future work.
