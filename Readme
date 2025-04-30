@@ -1,3 +1,5 @@
+=IF(AND(C3=TRUE, D3=TRUE), "Both", IF(AND(C3=TRUE, D3=FALSE), "Only Global", IF(AND(C3=FALSE, D3=TRUE), "Only China", "Not Used")))
+
 SNO
 Command
 Syntax
