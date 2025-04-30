@@ -210,3 +210,7 @@ I wanted to request a change in my WFH schedule for this
 | 12   | Market Facilities | YES        | NO        |
 | 13   | Recovery          | YES        | NO        |
 | 14   | Reporting         | YES        | NO        |
+t
+
+
+=IF(AND(C3=TRUE, D3=TRUE), "Both", IF(AND(C3=TRUE, D3=FALSE), "Only Global", IF(AND(C3=FALSE, D3=TRUE), "Only China", "None")))
