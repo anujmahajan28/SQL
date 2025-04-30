@@ -215,7 +215,15 @@ I wanted to request a change in my WFH schedule for this
 t
 =COUNTIF(C3:C16, TRUE)/COUNTA(C3:C16)
 =COUNTIF(D3:D16, TRUE)/COUNTA(D3:D16)
+Hi Chandra,
 
+Please find attached the updated Excel sheet listing the UAT modules mapped for both Global and China environments.
+The sheet includes the module availability across both regions, along with totals and a clear distinction between common and exclusive modules.
+
+Let me know if any changes are required or if further details are needed.
+
+Best regards,
+[Your Name]
 Metric
 Value Formula
 Total Global Modules
