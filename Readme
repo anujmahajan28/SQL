@@ -211,6 +211,21 @@ I wanted to request a change in my WFH schedule for this
 | 13   | Recovery          | YES        | NO        |
 | 14   | Reporting         | YES        | NO        |
 t
+=COUNTIF(C3:C16, TRUE)/COUNTA(C3:C16)
+=COUNTIF(D3:D16, TRUE)/COUNTA(D3:D16)
+
+Metric
+Value Formula
+Total Global Modules
+=COUNTIF(C3:C16, TRUE)
+Total China Modules
+=COUNTIF(D3:D16, TRUE)
+Common Modules
+=COUNTIFS(C3:C16, TRUE, D3:D16, TRUE)
+Exclusive to Global
+=COUNTIFS(C3:C16, TRUE, D3:D16, FALSE)
+Exclusive to China
+=COUNTIFS(C3:C16, FALSE, D3:D16, TRUE)
 
 
 =IF(AND(C3=TRUE, D3=TRUE), "Both", IF(AND(C3=TRUE, D3=FALSE), "Only Global", IF(AND(C3=FALSE, D3=TRUE), "Only China", "None")))
