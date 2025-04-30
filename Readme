@@ -191,11 +191,22 @@ I’ve been practicing various SQL queries and regularly updating my sheet with 
 
 I hope you’re doing well.
 
-I wanted to request a change in my WFH schedule for this week. I have a train to catch at 4:00 PM on Friday, and one of my practical exams is scheduled on Monday. Therefore, I kindly request to work from home on Friday and Monday instead of Wednesday, just for this week.
+I wanted to request a change in my WFH schedule for this 
 
-I will ensure that all my tasks and responsibilities are managed efficiently during the WFH days.
 
-Looking forward to your approval.
-
-Best regards,
-[Your Name]
+| S.No | Module Name       | Global UAT | China UAT |
+|———|—————————|——————|—————|
+| 1    | Deal Origination  | YES        | NO        |
+| 2    | Simulations       | YES        | YES       |
+| 3    | Requests          | YES        | YES       |
+| 4    | Contracts         | YES        | YES       |
+| 5    | Client View       | YES        | YES       |
+| 6    | Covenants         | YES        | YES       |
+| 7    | Workflow          | YES        | YES       |
+| 8    | Asset             | YES        | YES       |
+| 9    | Syndication       | YES        | NO        |
+| 10   | Spread Auto       | YES        | NO        |
+| 11   | Leverage          | YES        | NO        |
+| 12   | Market Facilities | YES        | NO        |
+| 13   | Recovery          | YES        | NO        |
+| 14   | Reporting         | YES        | NO        |
