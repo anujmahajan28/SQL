@@ -227,5 +227,7 @@ Exclusive to Global
 Exclusive to China
 =COUNTIFS(C3:C16, FALSE, D3:D16, TRUE)
 
+=IF(AND(C3=TRUE, D3=TRUE), "Common", IF(AND(C3=TRUE, D3=FALSE), "Global Only", IF(AND(C3=FALSE, D3=TRUE), "China Only", "Not Used")))
+
 
 =IF(AND(C3=TRUE, D3=TRUE), "Both", IF(AND(C3=TRUE, D3=FALSE), "Only Global", IF(AND(C3=FALSE, D3=TRUE), "Only China", "None")))
